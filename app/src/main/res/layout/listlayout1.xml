@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv1"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/cardrel1"
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/carrelitem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/carrelcolor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/color"
+                android:layout_below="@+id/carrelitem"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/carrelsize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/size"
+                android:layout_below="@+id/carrelcolor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/carrelqty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/qty"
+                android:layout_below="@+id/carrelsize"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <TableRow
+            android:id="@+id/tabcar"
+            android:orientation="horizontal"
+            android:layout_margin="20dp"
+            android:layout_gravity="bottom|end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            >
+
+            <ImageView
+                android:id="@+id/tabimgcancel"
+                android:layout_width="57dp"
+                android:layout_height="56dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/imagecancel"
+                android:src="@android:drawable/ic_delete" />
+
+            <ImageView
+                android:id="@+id/tabimgupdate"
+                android:layout_width="57dp"
+                android:layout_height="56dp"
+                android:layout_margin="10dp"
+                android:contentDescription="@string/imageupdate"
+                android:src="@android:drawable/ic_menu_add" />
+
+        </TableRow>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

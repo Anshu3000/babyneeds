@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">babyneed2</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="add">ADD ITEM</string>
+    <string name="item">items</string>
+    <string name="qty">qty</string>
+    <string name="size">size</string>
+    <string name="color">color</string>
+    <string name="imagecancel">cancel</string>
+    <string name="imageupdate">update</string>
+    <string name="delete">delete all</string>
+
+</resources>
